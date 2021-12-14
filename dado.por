@@ -3,18 +3,18 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro idade,mesesidade, diasidade, anos, meses, dias
-		
-		escreva("Digite quantos anos você tem: ")
-		leia(idade)
-		escreva("Digite quantos meses você tem: ")
-		leia(mesesidade)
-				
-		anos = (365 * idade)
-		meses = (30 * mesesidade)
-		dias = (anos + meses)
 
-		escreva("Sua idade em dias é: ",  dias, " dias.")
+	real media = 0.0, soma = 0.0
+	inteiro dado [10], indice, maior = 0, contador = 0, media, soma
+
+		para (indice = 0; indice < 10; indice++){
+		escreva("Informe o valor da jogada: ")
+		leia(dado[indice])
+		soma = soma + dado
+	}
+
+		media = soma /10
+		escreva("A média das jogadas foi: ", media, " e o maior número jogado foi: ", maior)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -22,7 +22,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 217; 
+ * @POSICAO-CURSOR = 365; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
